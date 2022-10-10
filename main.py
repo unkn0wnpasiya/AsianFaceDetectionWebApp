@@ -10,7 +10,7 @@ from hugsvision.inference.VisionClassifierInference import VisionClassifierInfer
 
 @slit.cache
 def loadModel():
-    model_path = '/mnt/c/Users/pdaks/Downloads/model/content/AsianFacesOut/ASIANFACES/3_2022-10-04-17-20-28/model'
+    model_path = 'model/content/AsianFacesOut/ASIANFACES/3_2022-10-04-17-20-28/model'
     classifier = VisionClassifierInference(
         feature_extractor = ViTFeatureExtractor.from_pretrained('google/vit-base-patch16-224-in21k'),
         model = ViTForImageClassification.from_pretrained(model_path),
